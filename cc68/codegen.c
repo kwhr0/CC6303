@@ -270,8 +270,8 @@ static void AssignD(unsigned short value, int keepc)
             AddCodeLine("ldaa #$%02X", hi);
             AddCodeLine("ldab #$%02X", lo);
         } else {
-            AddCodeLine("ldab #$%02X", hi);
-            AddCodeLine("ldaa #$%02X", lo);
+            AddCodeLine("ldab #$%02X", lo);
+            AddCodeLine("ldaa #$%02X", hi);
         }
         return;
     }
